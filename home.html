@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-x="html" data-x-toggle="html-overflow-hidden">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/general/favicon.jpg" type="image/png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="../../css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/css/bootstrap.min.css">
+
+  <title>Alterverse</title>
+</head>
+
+<body class="bg-dark-3">
+  <div class="preloader js-preloader">
+    <div class="preloader__wrap">
+      <div class="preloader__icon">
+        <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_729_2673)">
+            <path
+              d="M12.8442 10.5589L15.9802 9.39139L16.0126 31.9993C17.0681 31.9994 18.1209 31.8957 19.156 31.6895V10.56L15.999 8.7373L12.8442 10.5589Z"
+              fill="#C29F7B"></path>
+            <path
+              d="M27.3139 4.68612C24.2917 1.66467 20.274 0 16 0C11.726 0 7.70831 1.66467 4.68612 4.68612C1.66394 7.70758 0 11.7264 0 16C0 20.2736 1.66467 24.2917 4.68612 27.3139C6.11337 28.7454 7.7991 29.8934 9.65399 30.697C10.667 31.1348 11.7232 31.4651 12.8051 31.6825V15.1386L9.6492 13.3159L6.49332 15.1367L9.63005 13.9696L9.6492 27.5326C5.5877 25.2861 2.83178 20.9598 2.83178 16C2.83178 8.73916 8.73916 2.83178 16 2.83178C23.2608 2.83178 29.1686 8.73916 29.1686 16C29.1708 19.3934 27.8585 22.6557 25.507 25.1023V15.1386L22.3501 13.3159L19.1949 15.1367L22.3309 13.9696L22.3552 30.6937C23.472 30.2099 24.5294 29.5993 25.5067 28.874C26.1465 28.3988 26.7505 27.8772 27.3139 27.3135C30.3361 24.2913 32 20.2736 32 15.9996C32 11.7256 30.3361 7.70831 27.3139 4.68612Z"
+              fill="#C29F7B"></path>
+          </g>
+          <defs>
+            <clippath id="clip0_729_2673">
+              <rect width="32" height="32" fill="white"></rect>
+            </clippath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <div class="preloader__title">Alterverse</div>
+  </div>
+
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
+  <!-- booting button -->
+  <button class="contactButton js-toggle-requestForm">
+    Book for your Event
+  </button>
+
+  <button class="toTopButton js-top-button">
+    <i class="icon-down-arrow"></i>
+  </button>
+
+  <main>
+
+    <header class="header -type-1 js-header">
+      <div data-anim="fade delay-3" class="header__container">
+        <div class="header__left">
+          <!-- mobile hamburg button -->
+          <button class="header__menuBtn js-menu-button d-lg-none">
+            <i></i>
+          </button>
+
+          <a href="index.html" class="header__logo">
+            <img src="img/general/logo-light.svg" alt="logo icon">
+            <img src="img/general/logo-dark.svg" alt="logo icon">
+          </a>
+        </div>
+
+
+        <div class="header__right">
+          <div class="headerMenu pr-25">
+          <div class="headerMenu__item">
+            <a href="contact.html" class="alter">Work</a>
+          </div>
+            <div class="headerMenu__item">
+              <a href="contact.html" class="alter">Contact</a>
+            </div>
+          </div>
+          <!-- desktop button -->
+          <button class="header__menuBtn js-menu-button lg:d-none">
+          <svg width="100" height="100" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+            transform="matrix(-1, 0, 0, 1, 0, 0)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M5.5 7.75C5.08579 7.75 4.75 8.08579 4.75 8.5C4.75 8.91421 5.08579 9.25 5.5 9.25V7.75ZM19.5 9.25C19.9142 9.25 20.25 8.91421 20.25 8.5C20.25 8.08579 19.9142 7.75 19.5 7.75V9.25ZM5.5 11.75C5.08579 11.75 4.75 12.0858 4.75 12.5C4.75 12.9142 5.08579 13.25 5.5 13.25V11.75ZM17.5 13.25C17.9142 13.25 18.25 12.9142 18.25 12.5C18.25 12.0858 17.9142 11.75 17.5 11.75V13.25ZM5.5 15.75C5.08579 15.75 4.75 16.0858 4.75 16.5C4.75 16.9142 5.08579 17.25 5.5 17.25V15.75ZM12.5 17.25C12.9142 17.25 13.25 16.9142 13.25 16.5C13.25 16.0858 12.9142 15.75 12.5 15.75V17.25ZM5.5 9.25H19.5V7.75H5.5V9.25ZM5.5 13.25H17.5V11.75H5.5V13.25ZM5.5 17.25H12.5V15.75H5.5V17.25Z"
+                fill="#fff"></path>
+            </g>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu -top-header js-menu">
+      <div class="menu__left">
+        
+        <div class="menuNav js-menuNav">
+          <div class="menuNav__item">
+            <a href="#">
+              Events
+            </a>
+          </div>
+          <div class="menuNav__item">
+            <a href="#">
+              Media
+            </a>
+          </div>
+          <div class="menuNav__item">
+            <a href="#">
+              Experientials
+            </a>
+          </div>
+
+          <div class="menuNav__item -has-submenu js-has-submenu">
+            <a href="#">
+              Services
+              <i class="icon-plus"></i>
+            </a>
+
+            <div class="submenu js-submenu">
+              <div class="submenu__wrap">
+
+                <div class="submenu__item">
+                  <a href="blog-list-1.html">Service 1</a>
+                </div>
+
+                <div class="submenu__item">
+                  <a href="blog-list-2.html">Service 2</a>
+                </div>
+
+                <div class="submenu__item">
+                  <a href="blog-list-3.html">Service 3</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="menuNav__item">
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="menuNav__item">
+            <a href="contact.html">Careers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__close js-menuClose js-menu-button">
+        <i class="icon-cross"></i>
+      </div>
+    </div>
+
+
+    <section data-anim-wrap="" class="hero -type-3 js-hero-type-3 js-mouse-move-container">
+      <div data-anim-child="fade delay-1">
+        <canvas id="canv"  class="hero__bg"></canvas>
+      </div>
+
+      <div class="hero__content">
+        <div data-anim-child="slide-up delay-4" class="hero__subtitle md:text-20">
+          Welcome to another world, our world
+        </div>
+
+        <h1 data-move="50" class="hero__title js-mouse-move js-splt md:text-30">
+          our Alterverse
+        </h1>
+
+        <div data-anim-child="slide-up delay-8">
+          <a href="#" class="hero__button button -md -accent-1 border-white rounded-16 text-white">EXPERIENCE OUR WORK</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-pt-md">
+      <div class="container">
+        <div class="row y-gap-30 justify-between items-center">
+          <div class="col-lg-6">
+            <div class="ratio ratio-1:1" data-speed="0.05" data-revert="true">
+              <img src="img/about/about.JPG" alt="image" class="img-ratio rounded-12">
+            </div>
+          </div>
+    
+          <div class="col-xl-5 col-lg-6">
+            <h2 class="alt-title text-62 md:text-38 capitalize" data-aos="slide-left" data-aos-delay="50">
+              <span class="text-accent-1">Who we are</span>
+            </h2>
+          <img src="img/icons/9.png" class="bg-shape-1" alt="who we are">
+            <p class="text-18 md:text-16 mt-20 md:mt-20 text-white" data-aos="zoom-in" data-aos-delay="60">We are excited and sold out to a mission of making the world a better place, we break the rules, discover imaginative
+            and inventive ways to create and build experiences of enduring meaning and value specialized services in Events, Media,
+            Experiential Marketing, Consulting, and training. With a commitment to excellence, creativity, and customer
+            satisfaction, Alterverse is dedicated to providing top-notch services that elevate brands and create unforgettable
+            experiences</p>
+            <button
+              class="button -md -dark-1 -min-260 rounded-4 text-accent-1 border-white mt-60 md:mt-20" data-aos="flip-down" data-aos-delay="70"><i class="icon-right-arrow text-30 px-20"></i> Learn More About us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-pt-lg layout-pb-lg bg-dark-3">
+      <div class="container">
+    
+        <div data-anim-wrap="" class="row y-gap-30 pt-60 md:pt-30 animated">
+    
+          <div class="col-lg-4 col-md-6">
+            <div data-aos="zoom-in-up" data-aos-delay="100" class="cardBox -hover-iconCard-3 px-40 py-40 md:px-30 border-accent-2 bg-m-v-i bg-dark-2 text-white px-40 py-40 md:px-30 is-in-view">
+              <div class="size-100 flex-center rounded-full text-accent-1 border-accent-1 -hoverIcon">
+                <i class="icon-building text-40"></i>
+              </div>
+    
+              <h3 class="text-30 fw-700 mt-30">Mission</h3>
+    
+              <p class="mt-10">We design and service the next generation office building – one that feels more like a
+                full-service, lifestyle hotel.</p>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6">
+            <div data-aos="zoom-in-down" data-aos-delay="150" class="cardBox hover-icon-1 bg-m-v-i bg-dark-2 text-white px-40 py-40 md:px-30 is-in-view">
+              <div class="size-100 flex-center rounded-full text-accent-1 border-accent-1 hover-icon-1__item">
+                <i class="icon-group text-40"></i>
+              </div>
+    
+              <h3 class="text-30 fw-700 mt-30">Passion</h3>
+    
+              <p class="mt-10">We are a team of 300 people who specialize in hospitality, technology, design, and<br>
+                production.</p>
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6">
+            <div data-aos="zoom-in-left" data-aos-delay="200" class="cardBox hover-icon-1 bg-m-v-i bg-dark-2 text-white px-40 py-40 md:px-30 is-in-view">
+              <div class="size-100 flex-center rounded-full text-accent-1 border-accent-1 hover-icon-1__item">
+                <i class="icon-badge text-40"></i>
+              </div>
+    
+              <h3 class="text-30 fw-700 mt-30">Our Impact</h3>
+    
+              <p class="mt-10">For each space we design, each technology item we carry, every meal we prepare, and every
+                line item in the production schedule.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- <div class="overview-shape">
+      <img src="img/icons/11.png" alt="image">
+    </div>
+    <div class="overview-shape-2">
+      <img src="img/icons/12.png" alt="image">
+    </div> -->
+    <!-- What we do -->
+    <section class="layout-pt-md">
+      <div class="container">
+    <div class="row justify-center items-center">
+      <div class="col-xl-5 col-lg-6">
+        <h2 class="alt-title text-62 md:text-38 capitalize">
+          <span class="text-accent-1" data-aos="fade-up">What we do</span>
+        </h2>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    
+    <section class="layout-pt-lg">
+      <div class="container">
+        <div class="row y-gap-30 justify-center items-center">
+          <div class="col-xl-5 col-lg-5">
+            <h2 class="text-62 md:text-38 uppercase" data-aos="slide-down" data-aos-delay="100">
+              <span class="text-white">EVENT</span>
+            </h2>
+            <img src="img/icons/14.png" class="bg-shape-2" alt="Event">
+            <p class="text-18 md:text-16 mt-5 md:mt-10 text-white" data-aos="slide-right" data-aos-delay="200">At the heart of Alterverse's expertise lies its exceptional event management services. We offer end-to-end solutions,
+            including event designs and planning, procurements, stage/set designs, artist bookings, guest management, and event
+            publicity. Our experienced team ensures seamless execution, leaving clients free to enjoy and engage with their audience
+            while we take care of the intricate details of the event. From corporate gatherings to entertainment events, Alterverse
+            crafts memorable experiences tailored to our client's unique needs.</p>
+            <button class="button -md -dark-1 -min-260 rounded-12 text-dark-1 alt-what-we-do-btn mt-60 md:mt-20">Experience More</button>
+          </div>
+    
+          <div class="col-lg-5">
+            <div class="ratio hover15 ratio-1:1" data-aos="zoom-in">
+              <figure><img src="img/about/event2.JPG" alt="image" class="img-ratio-2 left-right-animate2 rounded-12"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout-pt-lg">
+      <div class="container">
+        <div class="row y-gap-30 justify-center items-center">
+          <div class="col-lg-5">
+            <div class="ratio ratio-1:1" data-aos="fade-right">
+              <img src="img/about/media.gif" alt="image" class="img-ratio-2 rounded-12">
+            </div>
+          </div>
+    
+          <div class="col-xl-5 col-lg-5">
+            <h2 class="text-62 md:text-38 uppercase">
+              <span class="text-white" data-aos="fade-up">Media</span>
+            </h2>
+            <img src="img/icons/13.png" class="bg-shape-3" alt="">
+            <p class="text-18 md:text-16 mt-5 md:mt-10 text-white" data-aos="fade-up">At Alterverse, our Media division stands as a testament to our commitment to excellence, creativity, and delivering
+            high-end services. Our team of seasoned professionals has had the privilege of providing top-notch media services to a
+            prestigious roster of clients, including but not limited to:</p>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="hero__content media-service">
+                    <div class="hero__badges js-subtitle d-flex px-20">
+                      <div>ONE ORG</div>
+                      <div>The Guardian UK</div>
+                      <div>French-Nigeria Business Council</div>
+                      <div>Olusegun Obasanjo Foundation</div>
+                      <div>BBC</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- button -->
+            <button class="button -md -dark-1 -min-260 rounded-12 text-dark-1 alt-what-we-do-btn mt-60 md:mt-20">Experience
+              More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="layout-pt-lg layout-pb-lg">
+      <div class="container">
+        <div class="row y-gap-30 justify-center items-center">
+          <div class="col-xl-5 col-lg-5">
+            <h2 class="text-62 md:text-38 uppercase" data-aos="slide-down">
+            <span class="text-white">EXPERIENTIAL MARKETING</span>
+            </h2>
+    
+            <p class="text-18 md:text-16 mt-5 md:mt-10 text-white" data-aos="zoom-in-left" data-aos-delay="60">In the realm of experiential marketing, Alterverse goes beyond traditional approaches. We specialize in creating
+            compelling narratives that establish deep connections between brands and their audience. By immersing consumers in
+            unique and memorable experiences, we facilitate genuine engagement that translates into lasting brand loyalty and
+            sustained patronage. Alterverse is committed to helping brands forge meaningful relationships with their customers
+            through innovative marketing strategies.</p>
+            <button class="button -md -dark-1 -min-260 rounded-12 text-dark-1 alt-what-we-do-btn mt-60 md:mt-20">Experience
+              More</button>
+          </div>
+    
+          <div class="col-lg-5">
+            <div class="ratio ratio-1:1" data-aos="zoom-in">
+              <img src="img/about/experiential-marketing.jpg" alt="image" class="img-ratio-2 rounded-12">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <canvas id='bg-3'></canvas>
+
+  <div class="-shape2">
+    <img src="img/icons/22.png" alt="image">
+  </div>
+    <!-- Our clients  -->
+    <section class="layout-pt-lg layout-pb-lg">
+      <div class="container">
+        <div class="row justify-center text-center">
+          <div class="col-auto">
+            <h2 class="text-55 fw-700">
+              <span class="text-white">Our Clients</span>
+            </h2>
+          </div>
+        </div>
+    
+        <div class="row justify-center">
+          <div class="col-lg-10">
+            <div class="row x-gap-60 y-gap-30 justify-between items-center pt-60 md:pt-40">
+    
+              <div class="col-md-auto col-6">
+                <div class="text-center">
+                  <img src="img/clients/1.svg" alt="image">
+                </div>
+              </div>
+    
+              <div class="col-md-auto col-6">
+                <div class="text-center">
+                  <img src="img/clients/2.svg" alt="image">
+                </div>
+              </div>
+    
+              <div class="col-md-auto col-6">
+                <div class="text-center">
+                  <img src="img/clients/3.svg" alt="image">
+                </div>
+              </div>
+    
+              <div class="col-md-auto col-6">
+                <div class="text-center">
+                  <img src="img/clients/4.svg" alt="image">
+                </div>
+              </div>
+    
+              <div class="col-md-auto col-6">
+                <div class="text-center">
+                  <img src="img/clients/5.svg" alt="image">
+                </div>
+              </div>
+    
+              <div class="col-md-auto col-6">
+                <div class="text-center">
+                  <img src="img/clients/6.svg" alt="image">
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end our clients -->
+
+<footer class="footer -type-2 bg-dark-3 text-white">
+  <div class="main-banner-shape">
+    <img src="img/icons/5.png" alt="image">
+  </div>
+  <div class="coverage-shape-2">
+    <img src="img/icons/2.png" alt="image">
+  </div>
+
+  <div class="container">
+    <div class="row y-gap-30 justify-between">
+      <div class="col-lg-4">
+        <h4 class="text-18 fw-500 uppercase">Subscribe to our newsletter</h4>
+
+        <div class="footerForm">
+          <h5 class="footerForm__title">ENTER YOUR EMAIL ADDRESS</h5>
+          <div class="footerForm__input">
+            <input type="text" placeholder="alterverse@gmail.com">
+          </div>
+
+          <button class="footerForm__button button -md -dark-1 text-white fw-700">Subscribe Now</button>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-6">
+        <div class="row y-gap-15 justify-between">
+          <div class="col-md-auto col-6">
+            <h4 class="footer__title text-18 fw-500 uppercase">
+              SALES OFFICE
+            </h4>
+
+            <div class="footer__list">
+              <div>Plot 13, Arab Road, Kubwa<br class="md:d-none">Bwari, FCT Abuja Nigeria.</div>
+              <div>sale@alterverse.com</div>
+              <div>Opening Hours: 9:00 — 21:00</div>
+            </div>
+          </div>
+
+          <div class="col-md-auto col-6">
+            <h4 class="footer__title text-20 fw-800 uppercase">
+              MENU
+            </h4>
+            <div class="footer__list text-20 fw-800">
+              <a href="#">EVENTS</a>
+              <a href="#">MEDIA</a>
+              <a href="#">EXPERIENTIAL</a>
+              <a href="#">CLIENTS</a>
+              <a href="#">CAREERS</a>
+              <a href="#">CONTACT US</a>
+            </div>
+          </div>
+
+          <div class="col-md-auto col-9">
+            <h4 class="footer__title text-18 fw-500 uppercase">
+              FOLLOW US
+            </h4>
+
+            <div class="footer__socials pt-15">
+              <a href="https://twitter.com/alterverse/" target="_blank"><svg width="48" height="48" viewBox="0 0 48 48" class="icon-animation">
+                    <g id="Group_385" data-name="Group 385" transform="translate(-239 -664)">
+                      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(239 664)" fill="#fff" stroke="#878787"
+                        stroke-width="1">
+                        <circle cx="24" cy="24" r="24" stroke="none"></circle>
+                        <circle cx="24" cy="24" r="23.5" fill="none"></circle>
+                      </g>
+                      <path id="Path_162" data-name="Path 162"
+                        d="M7054.868,2739.071a9.672,9.672,0,0,0,6.874-1.969,4.826,4.826,0,0,1-4.4-3.288,5.059,5.059,0,0,0,2.085-.089,4.729,4.729,0,0,1-3.707-4.672,4.955,4.955,0,0,0,2.095.556,4.717,4.717,0,0,1-2.042-3.385,4.566,4.566,0,0,1,.605-2.891,13.517,13.517,0,0,0,9.717,4.925c-.03-.278-.071-.534-.082-.791a4.6,4.6,0,0,1,2.322-4.365,4.686,4.686,0,0,1,5.579.61.542.542,0,0,0,.586.155,9.971,9.971,0,0,0,2.6-1.039,4.913,4.913,0,0,1-1.882,2.563c.277-.05.555-.091.829-.154.291-.067.58-.146.865-.237s.544-.2.816-.295l.046.048c-.376.44-.733.9-1.134,1.315a12.332,12.332,0,0,1-1.046.918.363.363,0,0,0-.147.322,13.662,13.662,0,0,1-2.91,8.8,12.52,12.52,0,0,1-7.932,4.821,13.6,13.6,0,0,1-7.255-.608A11.651,11.651,0,0,1,7054.868,2739.071Z"
+                        transform="translate(-6803.229 -2044.228)" fill="#878787"></path>
+                    </g>
+                  </svg></a><a href="https://www.instagram.com/alterverse/" target="_blank"><svg width="46"
+                    height="48" viewBox="0 0 46 48" class="icon-animation">
+                    <g id="Group_383" data-name="Group 383" transform="translate(-300 -664)">
+                      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(300 664)" fill="#fff" stroke="#878787"
+                        stroke-width="1">
+                        <ellipse cx="23" cy="24" rx="23" ry="24" stroke="none"></ellipse>
+                        <ellipse cx="23" cy="24" rx="22.5" ry="23.5" fill="none"></ellipse>
+                      </g>
+                      <g id="Group_263" data-name="Group 263" transform="translate(313.975 678.233)">
+                        <path id="Path_158" data-name="Path 158"
+                          d="M3574.027,2717.078h4.151a5.134,5.134,0,0,1,5.106,4.165,4.75,4.75,0,0,1,.092.933q.01,4.252,0,8.5a5.137,5.137,0,0,1-4.267,5.019,5.656,5.656,0,0,1-.908.076q-4.184.009-8.369,0a5.144,5.144,0,0,1-5.091-4.343,5.025,5.025,0,0,1-.061-.775q-.006-4.231,0-8.463a5.135,5.135,0,0,1,4.274-5.039,5.49,5.49,0,0,1,.881-.075C3571.233,2717.074,3572.63,2717.078,3574.027,2717.078Zm-7.949,9.343q0,2.068,0,4.138a4.171,4.171,0,0,0,.029.536,3.744,3.744,0,0,0,3.733,3.284q4.192.005,8.383,0a3.762,3.762,0,0,0,3.756-3.783q0-4.165,0-8.329a3.994,3.994,0,0,0-.028-.5,3.738,3.738,0,0,0-3.687-3.288c-2.821-.01-5.643,0-8.463,0a3.579,3.579,0,0,0-1.325.251,3.743,3.743,0,0,0-2.4,3.527Q3566.075,2724.339,3566.079,2726.421Z"
+                          transform="translate(-3564.68 -2717.077)" fill="#878787"></path>
+                        <path id="Path_159" data-name="Path 159"
+                          d="M3956.853,3114.268a4.988,4.988,0,1,1,4.985,5A5,5,0,0,1,3956.853,3114.268Zm8.571.012a3.583,3.583,0,1,0-3.58,3.58A3.581,3.581,0,0,0,3965.424,3114.281Z"
+                          transform="translate(-3952.49 -3104.927)" fill="#878787"></path>
+                        <path id="Path_160" data-name="Path 160"
+                          d="M4784.772,3006.435a.971.971,0,1,1,.976-.966A.963.963,0,0,1,4784.772,3006.435Z"
+                          transform="translate(-4770.245 -3001.296)" fill="#878787"></path>
+                      </g>
+                    </g>
+                  </svg></a><a href="https://www.facebook.com/alterverse/" target="_blank"><svg width="47"
+                    height="48" viewBox="0 0 47 48" class="icon-animation">
+                    <g id="Group_384" data-name="Group 384" transform="translate(-360 -664)">
+                      <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(360 664)" fill="#fff" stroke="#878787"
+                        stroke-width="1">
+                        <ellipse cx="23.5" cy="24" rx="23.5" ry="24" stroke="none"></ellipse>
+                        <ellipse cx="23.5" cy="24" rx="23" ry="23.5" fill="none"></ellipse>
+                      </g>
+                      <path id="Path_161" data-name="Path 161"
+                        d="M5529.384,2740.733v-8.52h2.859l.428-3.321h-3.287v-2.12c0-.961.267-1.616,1.646-1.616h1.758v-2.97a23.519,23.519,0,0,0-2.562-.131,4,4,0,0,0-4.271,4.389v2.449h-2.867v3.32h2.867v8.52Z"
+                        transform="translate(-5144.55 -2043.811)" fill="#878787"></path>
+                    </g>
+                  </svg></a><a href="https://www.linkedin.com/company/alterverse/" target="_blank"><svg
+                    height="48" viewBox="0 0 47 48" width="47" class="icon-animation">
+                    <g fill="#fff" stroke="#878787">
+                      <ellipse cx="23.5" cy="24" rx="23.5" ry="24" stroke="none"></ellipse>
+                      <ellipse cx="23.5" cy="24" fill="none" rx="23" ry="23.5"></ellipse>
+                    </g>
+                    <path
+                      d="m1133.061 2728.41v7.152h-4.146v-6.673c0-1.676-.6-2.82-2.1-2.82a2.268 2.268 0 0 0 -2.127 1.517 2.833 2.833 0 0 0 -.138 1.011v6.965h-4.15s.056-11.3 0-12.473h4.147v1.768l-.027.04h.027v-.04a4.118 4.118 0 0 1 3.738-2.061c2.73.004 4.776 1.783 4.776 5.614zm-17-11.333a2.161 2.161 0 1 0 -.055 4.311h.028a2.162 2.162 0 1 0 .027-4.311zm-2.1 18.485h4.146v-12.473h-4.146z"
+                      fill="#878787" transform="translate(-1099.396 -2704.053)"></path>
+                  </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="row justify-between md:justify-center">
+        <div class="col-auto">
+          <div>© 2023 Alterverse. All Right Reserved.</div>
+        </div>
+
+        <div class="col-auto">
+          <div class="row X-gap-10 y-gap-10">
+            <div class="col-auto">
+              <a href="#">Privacy policy</a>
+            </div>
+            <div class="col-auto">
+              <a href="#">Cookies</a>
+            </div>
+            <div class="col-auto">
+              <a href="#">Documents</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <div class="requestForm js-requestForm">
+      <div class="requestForm__overlay js-toggle-requestForm"></div>
+
+      <div class="requestForm__content">
+        <div class="requestForm__container">
+          <div class="requestForm__close js-toggle-requestForm">
+            <button>
+              <i class="icon-cross"></i>
+            </button>
+          </div>
+
+          <h3 class="requestForm__title"><span class="text-accent-1">Request</span><br> a visit</h3>
+
+          <div class="requestForm__form contactForm row y-gap-30">
+            <div class="col-12">
+              <div class="contactForm__field">
+                <div class="lh-12 fw-500 uppercase">Full name</div>
+                <input type="text">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="contactForm__field">
+                <div class="lh-12 fw-500 uppercase">phone</div>
+                <input type="text">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="contactForm__field">
+                <div class="lh-12 fw-500 uppercase">E-MAIL</div>
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="contactForm__field">
+                <div class="lh-12 fw-500 uppercase">DATE</div>
+                <input type="text">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="contactForm__field">
+                <div class="lh-12 fw-500 uppercase">TIME</div>
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="contactForm__field">
+                <div class="lh-12 fw-500 uppercase">YOUR MESSAGE</div>
+                <textarea rows="3"></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="button -md -dark-1 bg-accent-1 text-white col-12">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/wow.min.js"></script>
+  <!-- <script src="js/box.js"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.min.js"></script>
+
+<script>
+   /**
+      * Animation on scroll
+      */
+    window.addEventListener("load", () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    });
+</script>
+
+</body>
+
+</html>
